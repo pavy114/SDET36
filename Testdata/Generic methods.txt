@@ -1,0 +1,79 @@
+Generic utility Methods
+Java utility-
+1.connectDB().
+2.closeDB().
+3.executeQuery((String query);
+4.executeUpdate((String query);
+5.executeQuerryAndVerify(String querry,int columnName,String expectedData);
+
+===============
+Excel utility
+1.getDataFromExcel(String sheetName , int rowNum, int celNum);
+2.getRowCount(String sheetName);
+3.setDataExcel(String sheetName , int rowNum, int celNum ,String data)
+================
+FileUtility
+1.getDataFromExcel(String key1);
+================
+Java utility
+1.getRandomNumber();
+2.getSystemDateAndTime();
+3.getSystemDateWithFormat();
+========
+WebDriverutilitty
+1.waitForElementInDOM(WebDriver driver)---->For implicitly wait.
+2. waitForPage(WebDriver driver , String partailPageURL);
+------------
+For Explicitly wait
+1.waitForElement (WebDriver driver , WebElement element)---->Visibilty of Element
+
+//Switch to any window
+3.swithToWindow(WebDriver driver , String partialWindowTitle);
+
+4.Switch to Alert Window & click on OK button
+
+swithToAlertWindowAndAccpect(WebDriver driver ,String expectedMsg);
+
+5.Switch to Alert Window & click on Cancel button
+
+swithToAlertWindowAndCancel(WebDriver driver, String expectedMsg);
+
+6.Switch to Frame Window based on index
+
+swithToFrame(WebDriver driver , int index);
+
+7.Switch to Frame Window based on id or name attribute
+
+swithToFrame(WebDriver driver , String id_name_attribute);
+
+8. select the value from the dropDwon  based on index
+
+select(WebElement element , int index)
+
+9. select the value from the dropDwon  based on value / option avlaible in GUI
+
+ void select(WebElement element , String text);
+
+10. place mouse cursor on specified element
+
+mouseOverOnElement(WebDriver driver , WebElement elemnet);
+
+
+11.right click  on specified element
+void rightClickOnElement(WebDriver driver , WebElement elemnet);
+
+12. void executeJavaScript(WebDriver driver , String javaScript)
+
+
+13. enter Key appertain in to Browser
+
+ void passEnterKey(WebDriver driver);
+
+
+
+
+
+
+
+
+
